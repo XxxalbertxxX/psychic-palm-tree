@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bot Verification Hub</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }
+    .container { max-width: 600px; width: 100%; }
+    .header { text-align: center; margin-bottom: 40px; }
+    .header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    .header p { font-size: 1.1rem; opacity: 0.9; }
+    .cards { display: grid; gap: 20px; }
+    .card { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 30px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease; }
+    .card:hover { background: rgba(255, 255, 255, 0.15); transform: translateY(-5px); }
+    .card h2 { margin-bottom: 12px; font-size: 1.5rem; }
+    .card p { opacity: 0.95; line-height: 1.6; margin-bottom: 16px; }
+    .btn { display: inline-block; padding: 12px 24px; background: #4CAF50; color: white; text-decoration: none; border-radius: 6px; border: none; font-size: 1rem; cursor: pointer; transition: all 0.3s ease; }
+    .btn:hover { background: #45a049; transform: scale(1.05); }
+    .btn-secondary { background: #2196F3; }
+    .btn-secondary:hover { background: #0b7dda; }
+    .footer { text-align: center; margin-top: 40px; opacity: 0.8; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🤖 Bot Verification Hub</h1>
+      <p>Welcome! Choose your verification method below.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h2>✅ Direct Verification</h2>
+        <p>Click the button below to proceed to the verification page. This is the recommended way to verify your account.</p>
+        <a href="verify.html" class="btn">Go to Verification</a>
+      </div>
+
+      <div class="card">
+        <h2>📖 Instructions</h2>
+        <p>
+          1. Click "Go to Verification" above<br>
+          2. Click the "Click here to verify" button<br>
+          3. You will see a confirmation message<br>
+          4. Return to Discord — you should have the Verified role!
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>❓ Having Issues?</h2>
+        <p>If the verification button doesn't work or you're having trouble, try:</p>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+          <li>Refreshing the page (Ctrl+R)</li>
+          <li>Using a different browser</li>
+          <li>Running the bot command !verify again</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>🎮 Roblox Bot Verification System</p>
+    </div>
+  </div>
+</body>
+</html>
